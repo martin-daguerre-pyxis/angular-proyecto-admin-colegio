@@ -6,44 +6,46 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
-import { MatTableModule } from '@angular/material/table';
+import { MatTable, MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
-import { MatDialogActions, MatDialogClose, MatDialogContent, MatDialogModule, MatDialogTitle } from '@angular/material/dialog';
+import {
+  MatDialogActions,
+  MatDialogClose,
+  MatDialogContent,
+  MatDialogModule,
+  MatDialogTitle
+} from '@angular/material/dialog';
 import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
+import { MatSliderModule } from '@angular/material/slider';
+
+const modules = [
+  MatCardModule,
+  MatToolbarModule,
+  MatSidenavModule,
+  MatCheckboxModule,
+  MatFormFieldModule,
+  MatButtonModule,
+  MatInputModule,
+  MatIconModule,
+  MatTableModule,
+  MatSelectModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatButtonModule,
+  MatDialogModule,
+  MatDialogClose,
+  MatDialogContent,
+  MatDialogTitle,
+  MatDialogActions,
+  MatListModule,
+  MatTable,
+  MatSliderModule,
+];
 
 @NgModule({
-  imports: [
-    MatToolbarModule,
-    MatSidenavModule,
-    MatCheckboxModule,
-    MatFormFieldModule,
-    MatButtonModule,
-    MatInputModule,
-    MatIconModule,
-    MatTableModule,
-    MatSelectModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatDialogModule,
-    MatDialogClose, MatDialogContent, MatDialogTitle, MatDialogActions
-  ],
-  exports: [
-    MatToolbarModule,
-    MatSidenavModule,
-    MatCheckboxModule,
-    MatFormFieldModule,
-    MatButtonModule,
-    MatInputModule,
-    MatIconModule,
-    MatTableModule,
-    MatSelectModule,
-    MatFormFieldModule,
-    MatListModule,
-    MatInputModule,
-    MatButtonModule,
-    MatDialogModule,
-  ],
-  declarations: [],
+  imports: modules,
+  exports: modules,
 })
+
 export class MaterialModule { }

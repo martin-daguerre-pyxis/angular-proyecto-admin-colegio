@@ -1,4 +1,4 @@
-export interface StudentsList {
+export interface IStudent {
   id: number;
   nombre: string;
   apellido: string;
@@ -9,4 +9,5 @@ export interface StudentsList {
   carrera_id: number;
   semestre?: number;
   promedio?: number;
+  createAt?: number;
 }

@@ -21,7 +21,7 @@
         @apply py-0 px-5;
 
         .nav-item {
-            @apply w-full list-none p-0 m-0;
+            @apply w-full list-none py-3 my-0;
 
             a.nav-link {
                 @apply text-slate-800 decoration-transparent dark:text-slate-200 flex items-center;
