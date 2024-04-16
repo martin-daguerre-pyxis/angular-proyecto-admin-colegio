@@ -1,13 +1,27 @@
 
-#### Clase 4 - DESAFÍO ENTREGABLE
-## Interpolación y Directivas
+#### ENTREGA DEL PROYECTO FINAL
+
+## Primera entrega
+
 #### Consigna
 
-Entregar un proyecto que dado un array de alumnos los muestre en forma de lista y aplique diferentes estilos según algunas condiciones 🙌.
+Generar un proyecto Angular que contemple la administración de alumnos, clases y cursos, utilizando Angular Material. Ten en cuenta los aspectos técnicos y aspectos funcionales claves para que tu proyecto cumpla con los objetivos. Puedes ayudarte con la Rúbrica de la Primera Entrega del Proyecto Final.
+
 
  #### Aspectos a incluir
-Se espera la entrega de un proyecto configurado y funcional utilizando creación de componentes.
-Recuerda hacer uso correcto de directivas (estructurales y de atributo) y pipes.
+
+Componentes:** Lista de Alumnos y ABM de Alumnos.**
+
+**Formularios Reactivos de ABM de alumnos.
+**
+
+Lógica y estructura de representación de datos en listado, utilizando tablas de Angular Material tomando sus datos de arrays y funciones typescript.
+Pipe personalizado para mostrar el nombre junto al apellido de los alumnos
+
+Directiva personalizada para que las cabeceras o títulos tengan letra tamaño 20.
+Uso de la librería de bootstrap (instalada en el angular.json, no usar cdn)
+Subir el código a repositorio de GitHub
+
 
 #### Formato
 Se debe entregar un proyecto con el formato ANGULAR-CLI. Lo vamos a nombrar como  “Componentes+Apellido”.
@@ -16,16 +30,13 @@ Se debe entregar un proyecto con el formato ANGULAR-CLI. Lo vamos a nombrar como
 Incorporación de:
 - Angular Material
 - TailwindCSS 
-- Servicio de Cambio de Modos (Ligkt/Dark) guardando en LocalStorage (este servicio lo reutilicé de otro proyecto en el que he trabajado).
-- Quito Bootstrap
+- Servicio de Cambio de Modos (Ligkt/Dark) guardando en LocalStorage (este servicio lo reutilicé de otro proyecto en el que he trabajado).}
+- Login page
+ - Dashboard page
 
 ```
-cd proyecto-final/
 ng serve -o
 ```
-
-#### Ubicación local del componente, interface de estudiantes y datos.
-- proyecto-final/src/app/components/students/
 
 Gracias
 
