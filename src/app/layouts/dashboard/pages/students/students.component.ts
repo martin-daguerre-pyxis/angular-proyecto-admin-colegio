@@ -23,7 +23,6 @@ export class StudentsComponent {
     'nombre',
     'apellido',
     'fechaNac',
-    // 'edad', // ToDo
     'carrera',
     'semestre',
     'promedio',

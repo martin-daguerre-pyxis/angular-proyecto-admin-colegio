@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardModule } from './layouts/dashboard/dashboard.module';
-import { AuthModule } from './layouts/auth/auth.module';
 import { AuthComponent } from './layouts/auth/auth.component';
 import { DashboardComponent } from './layouts/dashboard/dashboard.component';
 import { ErrorComponent } from './layouts/error/error.component';
 
 const routes: Routes = [
-  { path: 'dashboard', component: DashboardComponent, loadChildren: () => DashboardModule },
-  { path: '', component: AuthComponent},
+  { path: 'dashboard', component: DashboardComponent, loadChildren: () => import('./layouts/dashboard/dashboard.module').then(m => m.DashboardModule) },
+  { path: 'auth', component: AuthComponent, loadChildren: () => import('./layouts/auth/auth.module').then(m => m.AuthModule) },
+  { path: '', component: AuthComponent, loadChildren: () => import('./layouts/auth/auth.module').then(m => m.AuthModule) },
   { path: '**', component: ErrorComponent },
 ];
 @NgModule({

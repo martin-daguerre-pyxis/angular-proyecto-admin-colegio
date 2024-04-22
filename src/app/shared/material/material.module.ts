@@ -18,6 +18,7 @@ import {
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatSliderModule } from '@angular/material/slider';
+import {MatMenuModule} from '@angular/material/menu';
 
 const modules = [
   MatCardModule,
@@ -41,6 +42,7 @@ const modules = [
   MatListModule,
   MatTable,
   MatSliderModule,
+  MatMenuModule
 ];
 
 @NgModule({
