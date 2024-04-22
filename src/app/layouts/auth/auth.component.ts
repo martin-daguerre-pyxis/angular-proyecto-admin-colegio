@@ -1,28 +1,24 @@
-import { Input, Component, Output, EventEmitter } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LocalstorageService } from '../../shared/services/localstorage';
 
 @Component({
   selector: 'app-auth',
-  templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.scss']
+  templateUrl: './auth.component.html'
 })
-export class AuthComponent {
+export class AuthComponent implements OnInit {
 
-  form: FormGroup = new FormGroup({
-    username: new FormControl('Admin'),
-    password: new FormControl('123456'),
-  });
+  constructor(private router: Router, localStorage: LocalstorageService) { }
 
-  submit() {
-    if (this.form.valid) {
-      this.router.navigate(['/dashboard'])
+  ngOnInit(): void {
+
+    this.router.navigate(['/auth/login']);
+
+    if (localStorage.getItem('token') && localStorage.getItem('user')) {
+      console.log('User is logged in');
+      this.router.navigate(['/dashboard/students']);
+    } else {
+      this.router.navigate(['/auth/login']);
     }
   }
-  @Input()
-  error!: string | null;
-
-  constructor(private router: Router) { }
-
-
 }

@@ -2,7 +2,7 @@
     @apply w-full;
 
     .offcanvas-body {
-        @apply p-0 overflow-hidden flex items-stretch w-full justify-between flex-col h-[calc(100vh-7rem)] bg-slate-300 dark:bg-slate-900;
+        @apply p-0 overflow-hidden flex items-stretch w-full justify-between flex-col h-[calc(100vh-7rem)] bg-slate-200 dark:bg-slate-900;
     }
 
     .bi {
