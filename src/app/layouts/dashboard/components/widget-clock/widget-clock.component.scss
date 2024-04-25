@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+
+.context {
+    width: 50%;
+    z-index: 2;
+    position: absolute;
+    top: 0%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 40px 20px;
+    opacity: 0.9;
+    border-radius: 24px;
+    left: 0%;
+    transform: translate(60%, 40%);
+    .txt-time {
+        text-align: center;
+        font-family: "Exo";
+        font-size: 64px;
+        letter-spacing: 5px;
+    }
+
+    .txt-greetings {
+        text-align: center;
+        font-family: "Exo";
+        letter-spacing: 3px;
+    }
+
+    .txt-suggestion {
+        text-align: center;
+        font-family: "Exo";
+        text-decoration: none;
+    }
+}

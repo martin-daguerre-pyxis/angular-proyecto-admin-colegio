@@ -10,7 +10,7 @@ import { DashboardRoutesModule } from './dashboard.routing.module';
   CommonModule,
     SharedModule,
     RouterModule,
-    DashboardRoutesModule,
+    DashboardRoutesModule
   ],
   declarations: [DashboardComponent],
 })

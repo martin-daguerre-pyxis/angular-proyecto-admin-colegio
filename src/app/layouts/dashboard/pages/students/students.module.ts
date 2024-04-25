@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StudentsComponent } from './students.component';
 import { SharedModule } from '../../../../shared/shared.module';
-import { StudentAbmComponent } from './components/student-abm/student-abm.component';
+import { MaterialModule } from '../../../../shared/material/material.module';
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
+    MaterialModule
   ],
-  declarations: [StudentsComponent, StudentAbmComponent]
+  declarations: [StudentsComponent]
 })
 export class StudentsModule { }

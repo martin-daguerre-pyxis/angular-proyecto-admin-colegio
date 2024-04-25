@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { FormFieldValidationErrorsPipe } from './pipes/form-field-validation-errors.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material.module';
@@ -12,7 +12,6 @@ import { RouterModule } from '@angular/router';
 import { ToggleNavService } from './services/toggle-nav.service';
 import { LoadingComponent } from './components/loading/loading.component';
 import { NavAccountComponent } from './components/nav-account/nav-account.component';
-
 @NgModule({
   declarations: [
     ThemeChangeComponent,
@@ -23,7 +22,7 @@ import { NavAccountComponent } from './components/nav-account/nav-account.compon
     LoadingComponent,
     NavAccountComponent
   ],
-  imports: [CommonModule, MaterialModule, ReactiveFormsModule, RouterModule],
+  imports: [CommonModule, DatePipe, MaterialModule, ReactiveFormsModule, RouterModule],
   providers: [LocalstorageService, ToggleNavService],
   exports: [
     MaterialModule,
