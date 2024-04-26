@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoadingService } from '../../core/services/loading.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,19 +14,13 @@ export class DashboardComponent implements OnInit {
     opened: true,
     backdrop: true,
   };
-  isLoading = true; // Simular loading de datos
 
-  constructor() { }
-
+  constructor(public loadingService: LoadingService) { 
+    this.loadingService.startLoading();
+  }
   ngOnInit() {
-    // Simular loading de datos
-    this.simulateLoading();
-  }
-
-  private simulateLoading() {
     setTimeout(() => {
-      this.isLoading = false;
-    }, 700);
+      this.loadingService.stopLoading();
+    }, 1000);
   }
-
 }

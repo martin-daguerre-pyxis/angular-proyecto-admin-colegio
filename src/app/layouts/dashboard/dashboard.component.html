@@ -1,6 +1,6 @@
-<ng-container *ngIf="isLoading; else content">
-  <app-loading [isLoading]="isLoading"></app-loading>
-</ng-container>
+<ng-template [ngIf]="loadingService.isLoading$ | async" [ngIfElse]="content">
+  <app-loading></app-loading>
+</ng-template>
 <ng-template #content>
   <mat-toolbar class="z-30 site-header">
     <button mat-icon-button (click)="sidenav.toggle()">

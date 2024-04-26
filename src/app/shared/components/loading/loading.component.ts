@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
 })
 export class LoadingComponent {
 @Input() 
-isLoading:boolean = false;
+isLoading:boolean = true;
 }

@@ -2,13 +2,35 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { SchedulesRoutingModule } from './schedules-routing.module';
+import { SchedulesComponent } from './schedules.component';
+import { CoreModule } from '../../../../core/core.module';
+import { SharedModule } from '../../../../shared/shared.module';
+import { SchedulesService } from './schedules.service';
+import { SchedulesMockService } from './schedules-mock.service';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    SchedulesComponent
+  ],
   imports: [
     CommonModule,
+    CoreModule,
+    SharedModule,
     SchedulesRoutingModule
+  ],
+  providers: [
+    {
+      provide: SchedulesService,
+      useClass: SchedulesMockService
+    },
+    {
+      provide: 'API_URL',
+      useValue: 'http://localhost:3000'
+    }
+  ],
+  exports: [
+    SchedulesComponent
   ]
 })
 export class SchedulesModule { }

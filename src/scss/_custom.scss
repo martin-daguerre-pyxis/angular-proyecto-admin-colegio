@@ -4,7 +4,7 @@
   }
 
   hr {
-    @apply border-0 border-gray-100/50 border-solid border-t w-full;
+    @apply border-0 border-slate-100/50 border-solid border-t w-full;
   }
 }
 
@@ -20,7 +20,7 @@ svg.bi {
   @apply w-12 h-12 flex items-center justify-center rounded-full;
 
   &:hover {
-    @apply bg-gray-100/10;
+    @apply bg-slate-100/10;
   }
 
   svg.bi {
@@ -29,7 +29,7 @@ svg.bi {
 }
 
 .divider {
-  @apply w-full h-0.5 bg-gray-100/50 border-0 border-solid border-t shadow-sm;
+  @apply w-full h-0.5 bg-slate-100/50 border-0 border-solid border-t shadow-sm;
 }
 
 body app-root {

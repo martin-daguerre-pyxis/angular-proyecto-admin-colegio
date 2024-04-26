@@ -13,24 +13,24 @@ export class LoginComponent {
    user:IUser = {
     id: 1,
     firstName: 'Martín',
-    lastName: 'Daguerre',
+    lastName: 'Daguerre Palombo',
     email: 'martin.daguerre@gmail.com',
-    username: 'martin.daguerre',
-    password: '!ESABVF1263',
+    username: 'martindaguerre',
+    password: '!Abc123',
     role: 'ADMIN',
     createdAt: new Date(),
   };
 
   form: FormGroup = new FormGroup({
     username: new FormControl('Admin', Validators.required),
-    password: new FormControl('!ESABVF1263', [Validators.required, Validators.minLength(6)] ),
+    password: new FormControl('!Abc123', [Validators.required, Validators.minLength(6)] ),
   });
 
   submit() {
     if (this.form.valid) {
       const userString = JSON.stringify(this.user); 
       localStorage.setItem('user', userString); 
-      localStorage.setItem('token', 'Bearer 123456789');
+      localStorage.setItem('token', 'Bearer !Abc123789');
       this.router.navigate(['dashboard', 'home']);
     } else {
       this.form.markAllAsTouched();
