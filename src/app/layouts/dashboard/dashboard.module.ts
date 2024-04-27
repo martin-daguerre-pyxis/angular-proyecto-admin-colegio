@@ -11,7 +11,7 @@ import { CoreModule } from '../../core/core.module';
     CoreModule,
     SharedModule,
     RouterModule,
-    DashboardRoutesModule
+    DashboardRoutesModule,
   ],
   declarations: [DashboardComponent],
 })

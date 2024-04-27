@@ -11,13 +11,13 @@ export class SchedulesComponent implements OnInit {
   items: Observable<any> | undefined;
 
   constructor(private scheduleService: SchedulesService) {
-    this.scheduleService.getSchedule().subscribe((data: any) => { 
+    /* this.scheduleService.getSchedule().subscribe((data: any) => { 
       console.log(data);
-    });
+    }); */
   }
 
   ngOnInit(): void {
-      this.items = this.scheduleService.getSchedule();
+      //this.items = this.scheduleService.getSchedule();
   }
 
 }

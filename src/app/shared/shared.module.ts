@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { ToggleNavService } from './services/toggle-nav.service';
 import { LoadingComponent } from './components/loading/loading.component';
 import { NavAccountComponent } from './components/nav-account/nav-account.component';
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   declarations: [
     ThemeChangeComponent,
@@ -22,9 +23,10 @@ import { NavAccountComponent } from './components/nav-account/nav-account.compon
     LoadingComponent,
     NavAccountComponent
   ],
-  imports: [CommonModule, DatePipe, MaterialModule, ReactiveFormsModule, RouterModule],
+  imports: [CommonModule, TranslateModule, DatePipe, MaterialModule, ReactiveFormsModule, RouterModule],
   providers: [LocalstorageService, ToggleNavService],
   exports: [
+    TranslateModule,
     MaterialModule,
     ReactiveFormsModule,
     FormFieldValidationErrorsPipe,

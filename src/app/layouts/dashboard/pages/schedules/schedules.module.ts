@@ -23,10 +23,6 @@ import { SchedulesMockService } from './schedules-mock.service';
     {
       provide: SchedulesService,
       useClass: SchedulesMockService
-    },
-    {
-      provide: 'API_URL',
-      useValue: 'http://localhost:3000'
     }
   ],
   exports: [
