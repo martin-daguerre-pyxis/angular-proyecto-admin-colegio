@@ -1,6 +1,6 @@
 <div class="flex flex-row items-center gap-2 m-0">
   <span class="material-symbols-outlined"> local_library </span>
-  <h4 class="line-clamp-none">Estudiantes</h4>
+  <h4 class="line-clamp-none">{{'students.title' | translate}}</h4>
 </div>
 
 <div
@@ -27,20 +27,20 @@
           <span class="material-symbols-outlined"> more_vert </span>
         </button>
         <mat-menu #menu="matMenu">
-          <span class="px-4"> {{ element.nombre }} {{ element.apellido }}</span>
+          <span class="px-4 text-black dark:text-white"> {{ element.nombre }} {{ element.apellido }}</span>
           <button mat-menu-item color="primary" (click)="editData(element)">
-            <mat-icon>edit</mat-icon><span>Editar</span>
+            <mat-icon>edit</mat-icon><span>{{'others.edit' | translate}}</span>
           </button>
           <button mat-menu-item color="warn" (click)="deleteData(element.id)">
             <mat-icon>delete</mat-icon>
-            <span>Eliminar</span>
+            <span>{{'others.delete' | translate}}</span>
           </button>
         </mat-menu>
       </td>
     </ng-container>
 
     <ng-container matColumnDef="nombre">
-      <th mat-header-cell *matHeaderCellDef>Nombre</th>
+      <th mat-header-cell *matHeaderCellDef>{{'students.columns.name' | translate}}</th>
       <td
         mat-cell
         *matCellDef="let element"
@@ -51,7 +51,7 @@
     </ng-container>
 
     <ng-container matColumnDef="apellido">
-      <th mat-header-cell *matHeaderCellDef>Apellido</th>
+      <th mat-header-cell *matHeaderCellDef>{{'students.columns.lastname' | translate}}</th>
       <td
         mat-cell
         *matCellDef="let element"
@@ -62,7 +62,7 @@
     </ng-container>
 
     <ng-container matColumnDef="fechaNac">
-      <th mat-header-cell *matHeaderCellDef>Fecha Nac.</th>
+      <th mat-header-cell *matHeaderCellDef>{{'students.columns.birthdate' | translate}}</th>
       <td
         mat-cell
         *matCellDef="let element"
@@ -73,7 +73,7 @@
     </ng-container>
 
     <ng-container matColumnDef="carrera">
-      <th mat-header-cell *matHeaderCellDef>Carrera</th>
+      <th mat-header-cell *matHeaderCellDef>{{'students.columns.course' | translate}}</th>
       <td
         mat-cell
         *matCellDef="let element"
@@ -84,7 +84,7 @@
     </ng-container>
 
     <ng-container matColumnDef="semestre">
-      <th mat-header-cell *matHeaderCellDef>Semestre</th>
+      <th mat-header-cell *matHeaderCellDef>{{'students.columns.semester' | translate}}</th>
       <td
         mat-cell
         *matCellDef="let element"
@@ -95,7 +95,7 @@
     </ng-container>
 
     <ng-container matColumnDef="promedio">
-      <th mat-header-cell *matHeaderCellDef>Promedio</th>
+      <th mat-header-cell *matHeaderCellDef>{{'students.columns.average' | translate}}</th>
       <td
         mat-cell
         *matCellDef="let element"

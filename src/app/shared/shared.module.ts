@@ -13,6 +13,9 @@ import { ToggleNavService } from './services/toggle-nav.service';
 import { LoadingComponent } from './components/loading/loading.component';
 import { NavAccountComponent } from './components/nav-account/nav-account.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { LanguageChangeModule } from './components/languageChange/language-change.module';
+import { LanguageChangeComponent } from './components/languageChange/languageChange.component';
+import { PipesModule } from './pipes/pipes.module';
 @NgModule({
   declarations: [
     ThemeChangeComponent,
@@ -23,7 +26,16 @@ import { TranslateModule } from '@ngx-translate/core';
     LoadingComponent,
     NavAccountComponent
   ],
-  imports: [CommonModule, TranslateModule, DatePipe, MaterialModule, ReactiveFormsModule, RouterModule],
+  imports: [
+    CommonModule, 
+    TranslateModule, 
+    DatePipe, 
+    MaterialModule, 
+    ReactiveFormsModule, 
+    RouterModule, 
+    LanguageChangeModule,
+    PipesModule
+  ],
   providers: [LocalstorageService, ToggleNavService],
   exports: [
     TranslateModule,
@@ -35,7 +47,9 @@ import { TranslateModule } from '@ngx-translate/core';
     FooterComponent,
     IconsComponent,
     LoadingComponent,
-    NavAccountComponent
+    NavAccountComponent,
+    LanguageChangeComponent,
+    PipesModule
   ],
 })
 export class SharedModule {}

@@ -20,7 +20,7 @@
 <mat-menu #menu="matMenu" xPosition="before">
   <span
     class="block px-4 py-3 -mt-1 font-bold text-black dark:text-white mat-menu-item"
-    >Hola {{ user?.firstName }} {{ user?.lastName }}</span
+    >{{'others.hi' | translate}} {{ user?.firstName }} {{ user?.lastName }}</span
   >
   <a routerLink="/auth/profile" mat-menu-item aria-label="Perfil" title="">
     <mat-icon>manage_accounts</mat-icon>
@@ -30,8 +30,8 @@
     routerLink="/auth/logout"
     mat-menu-item
     class="icon logout"
-    aria-label="Salir"
-    title="Salir"
+    [attr.aria-label]="'nav.logout' | translate"
+    [attr.title]="'nav.logout' | translate"
   >
     <mat-icon>logout</mat-icon><span>{{ "nav.logout" | translate }}</span>
   </a>

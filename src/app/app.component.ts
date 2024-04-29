@@ -5,9 +5,6 @@ import {TranslateService} from "@ngx-translate/core";
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
-export class AppComponent {
-  constructor(private translate: TranslateService) {
-    translate.setDefaultLang('es');
-    translate.use('en');
-  }
- }
+export class AppComponent {}
+
+    

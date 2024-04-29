@@ -1,13 +1,14 @@
 export interface StudentsList {
   id: number;
-  nombre: string;
-  apellido: string;
+  name: string;
+  lastname: string;
   email: string;
-  fechaNac: string;
-  edad: number;
-  carrera: string;
-  carrera_id: number;
-  semestre?: number;
-  promedio?: number;
+  phone?: string;
+  birthdate?: string;
+  age?: number;
+  courses: string;
+  courses_id: number;
+  semester?: number;
+  average?: number;
   createAt?: number;
 }
