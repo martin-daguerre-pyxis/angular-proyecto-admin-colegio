@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { LanguageChangeService } from './languageChange.service';
+import { LocalstorageService } from '../../services/localstorage';
 
 @Component({
   selector: 'app-languageChange',
@@ -7,12 +9,19 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./languageChange.component.css']
 })
 export class LanguageChangeComponent{
-  constructor(private translate: TranslateService) {
+  
+  private _languageService = inject(LanguageChangeService);
+  
+  constructor(private translate: TranslateService, localStorage: LocalstorageService) {
     translate.setDefaultLang('es');
-    translate.use('en');
+    const lang = localStorage.getItem('language');
+    if (lang) {
+      this.useLanguage(lang);
+    }
   }
   useLanguage(language: string): void {
-    console.log(language);
     this.translate.use(language);
+    this._languageService.toggleLangMode();
   }
+
 }
