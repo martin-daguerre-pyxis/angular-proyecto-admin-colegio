@@ -1,7 +1,7 @@
 
 #### ENTREGA DEL PROYECTO FINAL
 
-## Primera entrega
+## Segunda entrega
 
 #### Consigna
 

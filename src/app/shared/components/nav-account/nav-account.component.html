@@ -1,40 +1,38 @@
-  <a
-    mat-icon-button
-    class="icon logout"
-    aria-label="Perfil"
-    title="Perfil"
-    [matMenuTriggerFor]="menu"
+<a
+  mat-icon-button
+  class="icon logout"
+  aria-label="Perfil"
+  title="Perfil"
+  [matMenuTriggerFor]="menu"
+>
+  <mat-icon>account_circle</mat-icon>
+</a>
+<a
+  routerLink="/auth/logout"
+  mat-icon-button
+  class="icon logout"
+  aria-label="Salir"
+  title="Salir"
+>
+  <mat-icon>logout</mat-icon>
+</a>
+
+<mat-menu #menu="matMenu" xPosition="before">
+  <span
+    class="block px-4 py-3 -mt-1 font-bold text-black dark:text-white mat-menu-item"
+    >{{'others.hi' | translate}} {{ user?.firstName }} {{ user?.lastName }}</span
   >
-    <mat-icon>account_circle</mat-icon>
+  <a routerLink="/auth/profile" mat-menu-item aria-label="Perfil" title="">
+    <mat-icon>manage_accounts</mat-icon>
+    <span class="">{{ "nav.profile" | translate }}</span>
   </a>
   <a
     routerLink="/auth/logout"
-    mat-icon-button
+    mat-menu-item
     class="icon logout"
-    aria-label="Salir"
-    title="Salir"
+    [attr.aria-label]="'nav.logout' | translate"
+    [attr.title]="'nav.logout' | translate"
   >
-    <mat-icon>logout</mat-icon>
+    <mat-icon>logout</mat-icon><span>{{ "nav.logout" | translate }}</span>
   </a>
-
-  <mat-menu #menu="matMenu" xPosition="before">
-    <span class="block px-4 py-3 -mt-1 font-bold text-black dark:text-white mat-menu-item">Hola {{ user?.firstName }} {{ user?.lastName }}</span>
-    <a
-      routerLink="/auth/logout"
-      mat-menu-item
-      aria-label="Perfil"
-      title="Perfil"
-    >
-    <mat-icon>manage_accounts</mat-icon>
-    <span class="">Perfil</span>
-    </a>
-    <a
-      routerLink="/auth/logout"
-      mat-menu-item
-      class="icon logout"
-      aria-label="Salir"
-      title="Salir"
-    >
-      <mat-icon>logout</mat-icon><span>Cerrar sesión</span>
-    </a>
-  </mat-menu>
+</mat-menu>

@@ -1,12 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatTable } from '@angular/material/table';
 import { MatDialog } from '@angular/material/dialog';
-
 import { ELEMENT_DATA } from './students.data';
 import { CAREERS_COLOR, IStudent } from '../../../../core';
-
-import { StudentAbmComponent } from './components/student-abm/student-abm.component';
-
+// import { AbmComponent } from './components/abm/abm.component';
 
 
 @Component({
@@ -33,8 +30,8 @@ export class StudentsComponent {
 
   openDialog(data: IStudent | null): void {
     const editingItem = data;
-    this.dialog
-      .open(StudentAbmComponent, {
+/*     this.dialog
+      .open(AbmComponent, {
         data: data,
       })
       .afterClosed()
@@ -54,7 +51,7 @@ export class StudentsComponent {
             }
           }
         },
-      });
+      }); */
   }
 
   editData(element: IStudent) {

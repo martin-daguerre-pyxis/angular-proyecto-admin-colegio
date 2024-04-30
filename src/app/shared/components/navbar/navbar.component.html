@@ -1,106 +1,142 @@
-<div class="bg-primary-light-600 dark:bg-neutral-800 offcanvas-md offcanvas-end" tabindex="-1" id="sidebarMenu"
-  aria-labelledby="sidebarMenuLabel">
+<div
+  class="bg-primary-light-600 dark:bg-neutral-800 offcanvas-md offcanvas-end"
+  tabindex="-1"
+  id="sidebarMenu"
+  aria-labelledby="sidebarMenuLabel"
+>
   <div class="flex p-0 overflow-y-auto offcanvas-body flex-column pt-lg-3">
     <div id="logo">
       <svg class="w-auto h-16 m-auto mt-8 mb-12">
-        <use xlink:href="#logo"/>
+        <use xlink:href="#logo" />
       </svg>
     </div>
     <ul class="h-auto mt-0 mb-auto nav flex-column">
       <li class="nav-item">
-        <a class="gap-2 nav-link d-flex align-items-center active" routerLink="/dashboard" aria-current="page">
-          <span class="material-symbols-outlined">
-            space_dashboard
-            </span>
-          Dashboard
-        </a>
-      </li>
-     
-      <li class="nav-item">
-        <a class="gap-2 nav-link d-flex align-items-center"  routerLink="/dashboard/courses">
-          <span class="material-symbols-outlined">
-            school
-            </span>
-          Cursos
+        <a
+          class="gap-2 nav-link d-flex align-items-center active"
+          routerLinkActive="active"
+          routerLink="/dashboard"
+          aria-current="page"
+        >
+          <span class="material-symbols-outlined"> space_dashboard </span>
+          {{ "nav.home" | translate }}
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="gap-2 nav-link d-flex align-items-center"  routerLink="/dashboard/teachers">
-          <span class="material-symbols-outlined">
-            user_attributes
-            </span>
-          Profesores
+        <a
+          class="gap-2 nav-link d-flex align-items-center"
+          routerLinkActive="active"
+          routerLink="/dashboard/courses"
+        >
+          <span class="material-symbols-outlined"> school </span>
+          {{ "nav.courses" | translate }}
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="gap-2 nav-link d-flex align-items-center" routerLink="/dashboard/students">
-          <span class="material-symbols-outlined">
-            local_library
-            </span>
-          Estudiantes
+        <a
+          class="gap-2 nav-link d-flex align-items-center"
+          routerLinkActive="active"
+          routerLink="/dashboard/teachers"
+        >
+          <span class="material-symbols-outlined"> user_attributes </span>
+          {{ "nav.teachers" | translate }}
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="gap-2 nav-link d-flex align-items-center"  routerLink="/dashboard/schedules">
-          <span class="material-symbols-outlined">
-            schedule
-            </span>
-          Horarios
+        <a
+          class="gap-2 nav-link d-flex align-items-center active"
+          routerLinkActive="active"
+          routerLink="/dashboard/students"
+        >
+          <span class="material-symbols-outlined"> local_library </span>
+          {{ "nav.students" | translate }}
         </a>
       </li>
-      
+
       <li class="nav-item">
-        <a class="gap-2 nav-link d-flex align-items-center" routerLink="/dashboard/documents">
-          <span class="material-symbols-outlined">
-            article
-            </span>
-          Documentación
+        <a
+          class="gap-2 nav-link d-flex align-items-center"
+          routerLinkActive="active"
+          routerLink="/dashboard/schedules"
+        >
+          <span class="material-symbols-outlined"> schedule </span>
+          {{ "nav.schedule" | translate }}
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          class="gap-2 nav-link d-flex align-items-center"
+          routerLinkActive="active"
+          routerLink="/dashboard/documents"
+        >
+          <span class="material-symbols-outlined"> article </span>
+          {{ "nav.documents" | translate }}
         </a>
       </li>
     </ul>
 
     <h4
-      class="px-3 mt-4 mb-1 sidebar-heading d-flex justify-content-between align-items-center text-body-secondary text-uppercase">
-      <span>Reportes Histórico</span>
+      class="px-3 mt-4 mb-1 sidebar-heading d-flex justify-content-between align-items-center text-body-secondary text-uppercase"
+    >
+      <span>{{ "nav.reports" | translate }}</span>
     </h4>
     <ul class="h-auto mt-0 mb-auto nav flex-column">
       <li class="nav-item">
-        <a class="gap-2 nav-link d-flex align-items-center" routerLink="/dashboard/reports" [queryParams]="{year:2024}">
+        <a
+          class="gap-2 nav-link d-flex align-items-center"
+          routerLinkActive="active"
+          routerLink="/dashboard/reports"
+          [queryParams]="{ year: 2024 }"
+        >
           <svg class="bi">
             <use xlink:href="#graph-up" />
           </svg>
-          Año en curso
+          {{ "nav.reportYear" | translate }}
         </a>
       </li>
       <li class="nav-item">
-        <a class="gap-2 nav-link d-flex align-items-center"  routerLink="/dashboard/reports" [queryParams]="{year:2023}">
+        <a
+          class="gap-2 nav-link d-flex align-items-center"
+          routerLinkActive="active"
+          routerLink="/dashboard/reports"
+          [queryParams]="{ year: 2023 }"
+        >
           <svg class="bi">
             <use xlink:href="#graph-up" />
           </svg>
-          Año anterior
+          {{ "nav.reportMonth" | translate }}
         </a>
       </li>
     </ul>
-    <hr class="my-3">
+    <hr class="my-3" />
 
     <ul class="h-auto mt-auto mb-6 flex-column m-lg-0 m-sm-0 nav">
       <li class="nav-item">
-        <a class="gap-2 nav-link d-flex align-items-center" routerLink="/dashboard/config">
+        <a
+          class="gap-2 nav-link d-flex align-items-center"
+          routerLinkActive="active"
+          routerLink="/dashboard/config"
+        >
           <svg class="bi">
             <use xlink:href="#gear-wide-connected" />
           </svg>
-          Configuración
+          {{ "nav.settings" | translate }}
         </a>
       </li>
       <li class="nav-item">
-        <a class="gap-2 nav-link d-flex align-items-center" routerLink="/auth/logout">
+        <a
+          class="gap-2 nav-link d-flex align-items-center"
+          routerLinkActive="active"
+          routerLink="/auth/logout"
+        >
           <svg class="bi">
             <use xlink:href="#door-closed" />
           </svg>
-          Cerrar sesión
+          {{ "nav.logout" | translate }}
         </a>
       </li>
     </ul>

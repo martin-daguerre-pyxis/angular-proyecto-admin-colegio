@@ -1,3 +1,54 @@
-<p>
-  home works!
-</p>
+<div class="bg bg-slate-100 dark:bg-slate-600">
+  <div class="flex flex-row items-center gap-2 m-0">
+    <div class="material-symbols-outlined">space_dashboard</div>
+    <h4 class="line-clamp-none">Dashboard</h4>
+
+    <app-widget-clock></app-widget-clock>
+  </div>
+  <div style="width: 100%; position: relative; height: 100%; overflow: hidden">
+    <div class="area">
+      <ul class="circles">
+        <li>
+          <div>{{ minute }}</div>
+          <div>min</div>
+        </li>
+        <li>
+          <div>{{ minute }}</div>
+          <div>min</div>
+        </li>
+        <li>
+          <div>{{ second }}</div>
+          <div>sec</div>
+        </li>
+        <li>
+          <div>{{ hour }}</div>
+          <div>H</div>
+        </li>
+        <li>
+          <div>{{ second }}</div>
+          <div>sec</div>
+        </li>
+        <li>
+          <div>{{ minute }}</div>
+          <div>min</div>
+        </li>
+        <li>
+          <div>{{ second }}</div>
+          <div>sec</div>
+        </li>
+        <li>
+          <div>{{ second }}</div>
+          <div>sec</div>
+        </li>
+        <li>
+          <div>{{ hour }}</div>
+          <div>H</div>
+        </li>
+        <li>
+          <div>{{ second }}</div>
+          <div>sec</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

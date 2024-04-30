@@ -1,16 +1,15 @@
 import { Component, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import {
-  MAT_DIALOG_DATA,
-  MatDialogRef
+  MatDialogRef, MAT_DIALOG_DATA, MatDialog
 } from '@angular/material/dialog';
 import { StudentsList } from '../../students.interface';
 
 @Component({
-  selector: 'app-student-abm',
-  templateUrl: './student-abm.component.html'
+  selector: 'app-abm',
+  templateUrl: './abm.component.html'
 })
-export class StudentAbmComponent {
+export class AbmComponent {
 
   onNoClick(): void {
     this.dialogRef.close();
@@ -25,7 +24,7 @@ export class StudentAbmComponent {
 
   constructor(
     private formBuilder: FormBuilder,
-    public dialogRef: MatDialogRef<StudentAbmComponent>,
+    public dialogRef: MatDialogRef<AbmComponent>,
     @Inject(MAT_DIALOG_DATA) public data: StudentsList
   ) {
     this.studentForm = this.formBuilder.group({

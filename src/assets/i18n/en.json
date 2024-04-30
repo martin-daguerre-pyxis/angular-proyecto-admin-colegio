@@ -1,0 +1,359 @@
+{
+  "site": {
+    "title": " 'La Torre' College",
+    "subtitle": "School administration",
+    "description": "Angular course at Coderhouse"
+  },
+  "nav": {
+    "home": "Dashboard",
+    "courses": "Courses",
+    "teachers": "Teachers",
+    "students": "Students",
+    "subjects": "Subjects",
+    "schedule": "Schedule",
+    "assignments": "Assignments",
+    "exams": "Exams",
+    "grades": "Grades",
+    "documents": "Documents",
+    "reports": "Reports",
+    "reportYear": "Yearly Report",
+    "reportMonth": "Monthly Report",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "footer": {
+    "author": "Martín Daguerre",
+    "email": "martin.daguerre@gmail.com",
+    "phone": "+598 98.919.286",
+    "madeWith": "Made with "
+  },
+  "login": {
+    "title": "login",
+    "name": "User",
+    "email": "Email",
+    "password": "password",
+    "remember": "Remember me",
+    "forgot": "Forgot your password?",
+    "submit": "Log in",
+    "register": "Don't have an account? Register",
+    "error": "Incorrect email or password."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Institution overview",
+    "students": "Students",
+    "teachers": "teachers",
+    "courses": "Courses",
+    "subjects": "Subjects",
+    "schedule": "Schedule",
+    "assignments": "Assignments",
+    "exams": "Exams",
+    "grades": "Grades",
+    "documents": "Ddocuments",
+    "reports": "Reports",
+    "settings": "Settings"
+  },
+  "courses": {
+    "title": "Courses",
+    "subtitle": "List of courses",
+    "add": "Add course",
+    "edit": "Edit course",
+    "delete": "Delete course",
+    "name": "Name",
+    "description": "Description",
+    "teacher": "Teacher",
+    "students": "Students",
+    "error": "Course is already registered."
+  },
+  "teachers": {
+    "title": "Teachers",
+    "subtitle": "List of teachers",
+    "add": "Add teacher",
+    "edit": "Edit teacher",
+    "delete": "Delete teacher",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "error": "Teacher is already registered."
+  },
+  "students": {
+    "title": "Students",
+    "subtitle": "List of students",
+    "add": "Add student",
+    "edit": "Edit student",
+    "delete": "Delete student",
+    "columns": {
+      "name": "Name",
+      "lastname": "Lastname",
+      "birthdate": "Date of birth",
+      "course": "Course",
+      "semester": "Semester",
+      "average": "Average",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "error": "Student is already registered."
+  },
+  "subjects": {
+    "title": "Subjects",
+    "subtitle": "List of subjects",
+    "add": "Add subject",
+    "edit": "Edit subject",
+    "delete": "Delete subject",
+    "name": "Name",
+    "description": "Description",
+    "teacher": "Teacher",
+    "error": "The subject is already registered."
+  },
+  "schedule": {
+    "title": "Schedulea",
+    "subtitle": "List of Schedules",
+    "add": "Add Schedule",
+    "edit": "Edit Schedule",
+    "delete": "Delete Schedule",
+    "day": "Day",
+    "start": "Start",
+    "end": "End",
+    "course": "Course",
+    "subject": "subject",
+    "teacher": "Teacher",
+    "error": "The Schedule is already registered."
+  },
+  "assignments": {
+    "title": "Tasks",
+    "subtitle": "List of tasks",
+    "add": "Add task",
+    "edit": "Edit task",
+    "delete": "Delete task",
+    "name": "Name",
+    "description": "Description",
+    "date": "Date",
+    "course": "Course",
+    "subject": "Subject",
+    "teacher": "Teacher",
+    "error": "The assignment is already registered."
+  },
+  "exams": {
+    "title": "Exams",
+    "subtitle": "List of exams",
+    "add": "Add exam",
+    "edit": "Edit exam",
+    "delete": "Delete exam",
+    "name": "Name",
+    "description": "Description",
+    "date": "Date",
+    "course": "Course",
+    "subject": "Subject",
+    "teacher": "Teacher",
+    "error": "The Exam is already registered."
+  },
+  "grades": {
+    "title": "Grades",
+    "subtitle": "List of ratings",
+    "add": "Add grade",
+    "edit": "Edit rating",
+    "delete": "Delete rating",
+    "name": "Name",
+    "description": "Description",
+    "date": "Date",
+    "course": "Course",
+    "subject": "Subject",
+    "teacher": "Teacher",
+    "student": "Student",
+    "grade": "Grade",
+    "error": "The grade is already recorded."
+  },
+  "documents": {
+    "title": "Documents",
+    "subtitle": "List of documents",
+    "add": "Add document",
+    "edit": "Edit document",
+    "delete": "Delete document",
+    "name": "Name",
+    "description": "Description",
+    "file": "File",
+    "course": "Course",
+    "subject": "Subject",
+    "teacher": "Teacher",
+    "student": "Student",
+    "grade": "Grade",
+    "error": "The document already exists."
+  },
+  "reports": {
+    "title": "Reports",
+    "subtitle": "List of reports",
+    "add": "Add report",
+    "edit": "Edit report",
+    "delete": "Delete report",
+    "name": "Name",
+    "description": "Description",
+    "file": "File",
+    "course": "Course",
+    "subject": "Subject",
+    "teacher:": "Teacher",
+    "error": "The report is already registered."
+  },
+  "settings": {
+    "title": "Configuration",
+    "subtitle": "Institution configuration",
+    "general": "General",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "error": "The email is already registered."
+  },
+  "profile": {
+    "title": "Profile",
+    "subtitle": "Account Settings",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "password": "Password",
+    "confirm": "Confirm password",
+    "error": "The email is already registered."
+  },
+  "logout": {
+    "title": "Logout",
+    "message": "Are you sure you want to logout?",
+    "confirm": "Logout"
+  },
+  "confirm": {
+    "title": "Confirm action",
+    "message": "Are you sure you want to perform this action?",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "alert": {
+    "success": "Success",
+    "error": "Error",
+    "warning": "warning",
+    "info": "Information"
+  },
+  "message": {
+    "saved": "The data has been successfully saved.",
+    "deleted": "The data has been successfully deleted.",
+    "error": "An error has occurred. Please try again."
+  },
+  "dayNames": {
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday"
+  },
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "roles": {
+    "admin": "Administrator",
+    "teacher": "Teacher",
+    "student": "Student"
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "others": {
+    "loading": "Loading...",
+    "noData": "No data to display.",
+    "noResults": "No results were found.",
+    "noMatch": "No matches found.",
+    "hi": "Hello.",
+    "all": "All",
+    "none": "None",
+    "select": "Select",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "confirm": "Confirm",
+    "actions": "Actions",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "description": "Description",
+    "file": "File",
+    "date": "Date",
+    "course": "Course",
+    "subject": "Subject",
+    "teacher": "Teacher",
+    "student": "Student",
+    "grade:": "Grade",
+    "day": "Day",
+    "start": "Start",
+    "end": "End",
+    "password": "Password",
+    "warning": "warning",
+    "info": "Information",
+    "success": "Success",
+    "saved": "The data has been saved successfully",
+    "deleted": "The data has been successfully deleted.",
+    "error": "An error has occurred. Please try again.",
+    "confirmAction": "Are you sure you want to perform this action?",
+    "confirmLogout": "Are you sure you want to logout?"
+  },
+  "validation": {
+    "error": {
+      "required": "This field is required.",
+      "minlength": "This field must have at least {{requiredLength}} characters.",
+      "maxlength": "This field must have at most {{requiredLength}} characters.",
+      "email": "This field must be a valid email.",
+      "pattern": "This field is invalid.",
+      "unique": "This field is already registered."
+    },
+    "success": {
+      "saved": "The data has been saved successfully.",
+      "deleted": "The data has been deleted successfully."
+    },
+    "warning": {
+      "confirm": "Are you sure you want to perform this action?"
+    }
+  },
+  "widgets": {
+    "clock": {
+      "title": "Clock",
+      "link": "If you're bored with this click here...",
+      "earlyMorning": "It's bedtime Tutor!",
+      "morning": "Good morning Tutor",
+      "afternoon": "Good afternoons Tutor",
+      "evening": "Good evening Tutor"
+    }
+  },
+  "config": {
+    "title": "Configuration",
+    "subtitle": "Application Configuration",
+    "language": "Language",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "rtl": "Right to left",
+    "ltr": "Left to right"
+  },
+  "comingSoon": {
+    "title": "Coming soon",
+    "info": "Stay tuned, it won't be long now!"
+  }
+}

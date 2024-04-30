@@ -1,0 +1,13 @@
+<div class="text-orange-400 context dark:text-orange-400">
+  <div class="text-indigo-500 txt-time">
+    {{ time | date : "mediumTime" }}
+  </div>
+  <div class="text-4xl txt-greetings">{{ msg }}</div>
+  <div class="mt-4 text-orange-700 dark:text-orange-300 txt-suggestion">
+    <span
+      ><a href="{{ link }}" target="_blank" class="text-orange-700 no-underline dark:text-orange-300"
+        >{{ "widgets.clock.link" | translate}}</a
+      ></span
+    >
+  </div>
+</div>

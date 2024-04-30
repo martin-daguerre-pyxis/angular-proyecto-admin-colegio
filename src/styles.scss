@@ -5,12 +5,12 @@
 @import "./scss/variables";
 
 // Define tu paleta de colores primarios y secundarios
-$proyecto-final-primary: mat.define-palette($md-primary);
-$proyecto-final-accent: mat.define-palette($md-accent);
+$proyecto-final-primary: mat.define-palette($md-terceary);
+$proyecto-final-accent: mat.define-palette($md-primary);
 
 // Define tu paleta de colores primarios y secundarios DARK
-$proyecto-final-primary-dark: mat.define-palette($md-primary);
-$proyecto-final-accent-dark: mat.define-palette($md-accent);
+$proyecto-final-primary-dark: mat.define-palette($md-terceary);
+$proyecto-final-accent-dark: mat.define-palette($md-primary);
 
 // Define tu tema claro
 $proyecto-final-light-theme: mat.define-light-theme((color: (primary: $proyecto-final-primary,

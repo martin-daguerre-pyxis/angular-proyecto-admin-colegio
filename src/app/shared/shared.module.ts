@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { FormFieldValidationErrorsPipe } from './pipes/form-field-validation-errors.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material.module';
@@ -12,7 +12,10 @@ import { RouterModule } from '@angular/router';
 import { ToggleNavService } from './services/toggle-nav.service';
 import { LoadingComponent } from './components/loading/loading.component';
 import { NavAccountComponent } from './components/nav-account/nav-account.component';
-
+import { TranslateModule } from '@ngx-translate/core';
+import { LanguageChangeModule } from './components/languageChange/language-change.module';
+import { LanguageChangeComponent } from './components/languageChange/languageChange.component';
+import { PipesModule } from './pipes/pipes.module';
 @NgModule({
   declarations: [
     ThemeChangeComponent,
@@ -23,9 +26,19 @@ import { NavAccountComponent } from './components/nav-account/nav-account.compon
     LoadingComponent,
     NavAccountComponent
   ],
-  imports: [CommonModule, MaterialModule, ReactiveFormsModule, RouterModule],
+  imports: [
+    CommonModule, 
+    TranslateModule, 
+    DatePipe, 
+    MaterialModule, 
+    ReactiveFormsModule, 
+    RouterModule, 
+    LanguageChangeModule,
+    PipesModule
+  ],
   providers: [LocalstorageService, ToggleNavService],
   exports: [
+    TranslateModule,
     MaterialModule,
     ReactiveFormsModule,
     FormFieldValidationErrorsPipe,
@@ -34,7 +47,9 @@ import { NavAccountComponent } from './components/nav-account/nav-account.compon
     FooterComponent,
     IconsComponent,
     LoadingComponent,
-    NavAccountComponent
+    NavAccountComponent,
+    LanguageChangeComponent,
+    PipesModule
   ],
 })
 export class SharedModule {}

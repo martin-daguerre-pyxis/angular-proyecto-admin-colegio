@@ -1,0 +1,36 @@
+{
+    "users": [
+        {
+            "name": "John Doe",
+            "email": ""
+        },
+        {
+            "name": "Jane Doe",
+            "email": ""
+        },
+        {
+            "name": "John Smith",
+            "email": ""
+        },
+        {
+            "name": "Jane Smith",
+            "email": ""
+        }
+    ],
+    "groups": [
+        {
+            "name": "Group 1",
+            "users": [
+                "John Doe",
+                "Jane Doe"
+            ]
+        },
+        {
+            "name": "Group 2",
+            "users": [
+                "John Smith",
+                "Jane Smith"
+            ]
+        }
+    ]
+}

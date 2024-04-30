@@ -15,10 +15,19 @@ import {
   MatDialogModule,
   MatDialogTitle
 } from '@angular/material/dialog';
+
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatSliderModule } from '@angular/material/slider';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
+
+// CDK
+import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { DialogModule } from '@angular/cdk/dialog';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { LayoutModule } from '@angular/cdk/layout';
+import { CdkListboxModule } from '@angular/cdk/listbox';
+
 
 const modules = [
   MatCardModule,
@@ -32,17 +41,25 @@ const modules = [
   MatTableModule,
   MatSelectModule,
   MatFormFieldModule,
-  MatInputModule,
-  MatButtonModule,
+  // Dialog
   MatDialogModule,
   MatDialogClose,
   MatDialogContent,
   MatDialogTitle,
   MatDialogActions,
+  // List
   MatListModule,
   MatTable,
   MatSliderModule,
-  MatMenuModule
+  MatMenuModule,
+  MatIconModule,
+  MatTableModule,
+  // CDK
+  DialogModule,
+  CdkAccordionModule,
+  DragDropModule,
+  LayoutModule,
+  CdkListboxModule,
 ];
 
 @NgModule({

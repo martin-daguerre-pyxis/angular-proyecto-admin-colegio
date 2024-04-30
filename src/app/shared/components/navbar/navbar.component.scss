@@ -21,10 +21,14 @@
         @apply py-0 px-5;
 
         .nav-item {
-            @apply w-full list-none py-3 my-0;
+            @apply w-full list-none my-0;
 
             a.nav-link {
-                @apply text-slate-800 decoration-transparent dark:text-slate-200 flex items-center;
+                @apply text-slate-800 m-0 -mx-5 py-3 px-3 decoration-transparent dark:text-slate-200 flex items-center;
+                &:hover,
+                &.active {
+                    @apply bg-slate-100 dark:bg-slate-800;
+                }
             }
         }
     }
