@@ -1,5 +1,4 @@
 .bg {
-    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.5);
     position: fixed;

@@ -338,5 +338,19 @@
       "afternoon": "Buenas tardes Tutor",
       "evening": "Buenas noches Tutor"
     }
+  },
+  "config": {
+    "title": "Configuración",
+    "subtitle": "Configuración de la aplicación",
+    "language": "Idioma",
+    "theme": "Tema",
+    "dark": "Oscuro",
+    "light": "Claro",
+    "rtl": "Derecha a izquierda",
+    "ltr": "Izquierda a derecha"
+  },
+  "comingSoon": {
+    "title": "Próximamente",
+    "info": "¡Esté atento , falta poco!"
   }
 }

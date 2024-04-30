@@ -5,6 +5,7 @@ import { ConfigRoutingModule } from './config-routing.module';
 import { ConfigComponent } from './config.component';
 import { CoreModule } from '../../../../core/core.module';
 import { SharedModule } from '../../../../shared/shared.module';
+import { ComingSoonModule } from '../../components/coming-soon/coming-soon.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SharedModule } from '../../../../shared/shared.module';
     CommonModule,
     CoreModule,
     SharedModule,
-    ConfigRoutingModule
+    ComingSoonModule,
+    ConfigRoutingModule,
   ],
   exports: [
     ConfigComponent

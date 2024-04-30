@@ -341,5 +341,19 @@
       "afternoon": "Good afternoons Tutor",
       "evening": "Good evening Tutor"
     }
+  },
+  "config": {
+    "title": "Configuration",
+    "subtitle": "Application Configuration",
+    "language": "Language",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "rtl": "Right to left",
+    "ltr": "Left to right"
+  },
+  "comingSoon": {
+    "title": "Coming soon",
+    "info": "Stay tuned, it won't be long now!"
   }
 }

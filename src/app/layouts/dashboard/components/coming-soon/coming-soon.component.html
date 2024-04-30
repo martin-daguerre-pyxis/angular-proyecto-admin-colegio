@@ -1,0 +1,35 @@
+<div
+  class="absolute flex items-center justify-center w-full h-[80%] p-0 -mt-6 -ml-6 mb-0 text-center bg-center bg-cover"
+>
+  <div
+    class="fixed top-0 bottom-0 left-0 right-0 bg-gray-900 bg-center bg-cover opacity-15"
+    style="
+    background-image: url(https://images.pexels.com/photos/260689/pexels-photo-260689.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500);
+  "
+  ></div>
+
+  <div class="z-50 flex flex-col justify-center w-full h-screen text-gray-700 dark:text-white">
+    <div class="text-3xl text-gray-700 dark:text-white" style="font-family: 'Bungee Spice', sans-serif;">
+      <span class="relative w-24 text-7xl material-symbols-outlined">
+        engineering
+        </span>
+        <div>{{ "comingSoon.title" | translate }}</div>
+    </div>
+    <p class="p-0 m-3 text-6xl text-gray-700 dark:text-white">
+      {{ title }}<br />
+      {{ subtitle }}
+    </p>
+    <p>{{ "comingSoon.info" | translate }}</p>
+
+    <div class="mt-10 mb-5">
+      <div class="max-w-2xl mx-auto mt-2 bg-white rounded-full shadow w-80">
+        <div
+          class="py-3 text-xs leading-none text-center text-gray-700 bg-orange-600 rounded-full dark:text-white"
+          [style]="'width:' + percentage + '%; transition: width 1s ease-in-out; transition-delay: 0.5s; bacground-color:' + color + ';'"
+        >
+          {{ percentage }}%
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
