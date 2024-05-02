@@ -191,16 +191,6 @@
     "teacher": "Profesor",
     "error": "El reporte ya está registrado."
   },
-  "settings": {
-    "title": "Configuración",
-    "subtitle": "Configuración de la institución",
-    "general": "General",
-    "name": "Nombre",
-    "email": "Correo electrónico",
-    "phone": "Teléfono",
-    "address": "Dirección",
-    "error": "El correo electrónico ya está registrado."
-  },
   "profile": {
     "title": "Perfil",
     "subtitle": "Configuración de la cuenta",
@@ -348,6 +338,15 @@
     "light": "Claro",
     "rtl": "Derecha a izquierda",
     "ltr": "Izquierda a derecha"
+  },
+  "settings": {
+    "title": "Configuración",
+    "name": "Nombre",
+    "surname": "Apellido",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "error": "El correo electrónico ya está registrado."
   },
   "comingSoon": {
     "title": "Próximamente",
