@@ -14,9 +14,9 @@ export class AuthComponent implements OnInit {
 
     this.router.navigate(['/auth/login']);
 
-    if (localStorage.getItem('token') && localStorage.getItem('user')) {
-      console.log('User is logged in');
-      this.router.navigate(['/dashboard/students']);
+    if (localStorage.getItem('accessToken') !== null) {
+      console.log('Usuario Logueado');
+      this.router.navigate(['/dashboard/home']);
     } else {
       this.router.navigate(['/auth/login']);
     }

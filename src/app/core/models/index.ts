@@ -7,3 +7,4 @@ export * from './classroom.interface';
 export * from './attendance.interface';
 export * from './grades.interface';
 export * from './roles.interface';
+export * from './auth.interface';

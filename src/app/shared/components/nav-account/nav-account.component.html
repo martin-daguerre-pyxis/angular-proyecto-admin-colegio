@@ -1,38 +1,41 @@
-<a
-  mat-icon-button
-  class="icon logout"
-  aria-label="Perfil"
-  title="Perfil"
-  [matMenuTriggerFor]="menu"
->
-  <mat-icon>account_circle</mat-icon>
-</a>
-<a
-  routerLink="/auth/logout"
-  mat-icon-button
-  class="icon logout"
-  aria-label="Salir"
-  title="Salir"
->
-  <mat-icon>logout</mat-icon>
-</a>
-
-<mat-menu #menu="matMenu" xPosition="before">
-  <span
-    class="block px-4 py-3 -mt-1 font-bold text-black dark:text-white mat-menu-item"
-    >{{'others.hi' | translate}} {{ user?.firstName }} {{ user?.lastName }}</span
+<div *ngIf="authUser">
+  <a
+    mat-icon-button
+    class="icon logout"
+    aria-label="Perfil"
+    title="Perfil"
+    [matMenuTriggerFor]="menu"
   >
-  <a routerLink="/auth/profile" mat-menu-item aria-label="Perfil" title="">
-    <mat-icon>manage_accounts</mat-icon>
-    <span class="">{{ "nav.profile" | translate }}</span>
+    <mat-icon>account_circle</mat-icon>
   </a>
   <a
     routerLink="/auth/logout"
-    mat-menu-item
+    mat-icon-button
     class="icon logout"
-    [attr.aria-label]="'nav.logout' | translate"
-    [attr.title]="'nav.logout' | translate"
+    aria-label="Salir"
+    title="Salir"
   >
-    <mat-icon>logout</mat-icon><span>{{ "nav.logout" | translate }}</span>
+    <mat-icon>logout</mat-icon>
   </a>
-</mat-menu>
+
+  <mat-menu #menu="matMenu" xPosition="before">
+    <span
+      class="block px-4 py-3 -mt-1 font-bold text-black dark:text-white mat-menu-item"
+      >{{ "others.hi" | translate }} {{ authUser.firstName }}
+      {{ authUser.lastName }}</span
+    >
+    <a routerLink="/auth/profile" mat-menu-item aria-label="Perfil" title="">
+      <mat-icon>manage_accounts</mat-icon>
+      <span class="">{{ "nav.profile" | translate }}</span>
+    </a>
+    <a
+      routerLink="/auth/logout"
+      mat-menu-item
+      class="icon logout"
+      [attr.aria-label]="'nav.logout' | translate"
+      [attr.title]="'nav.logout' | translate"
+    >
+      <mat-icon>logout</mat-icon><span>{{ "nav.logout" | translate }}</span>
+    </a>
+  </mat-menu>
+</div>

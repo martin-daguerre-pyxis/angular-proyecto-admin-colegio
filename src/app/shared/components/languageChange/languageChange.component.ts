@@ -5,8 +5,7 @@ import { LocalstorageService } from '../../services/localstorage';
 
 @Component({
   selector: 'app-languageChange',
-  templateUrl: './languageChange.component.html',
-  styleUrls: ['./languageChange.component.css']
+  templateUrl: './languageChange.component.html'
 })
 export class LanguageChangeComponent{
   
@@ -17,9 +16,12 @@ export class LanguageChangeComponent{
     const lang = localStorage.getItem('language');
     if (lang) {
       this.useLanguage(lang);
+    }else{
+      this.useLanguage('es');
     }
   }
   useLanguage(language: string): void {
+    localStorage.setItem('language', language);
     this.translate.use(language);
     this._languageService.toggleLangMode();
   }

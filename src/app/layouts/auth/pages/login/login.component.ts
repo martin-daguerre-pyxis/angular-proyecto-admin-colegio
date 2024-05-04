@@ -1,7 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { IUser } from '../../../../core/models';
+import { AuthService } from '../../../../core/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -10,33 +10,24 @@ import { IUser } from '../../../../core/models';
 })
 export class LoginComponent {
 
-   user:IUser = {
-    id: 1,
-    firstName: 'Martín',
-    lastName: 'Daguerre Palombo',
-    email: 'martin.daguerre@gmail.com',
-    username: 'martindaguerre',
-    password: '!Abc123',
-    role: 'ADMIN',
-    createdAt: new Date(),
-  };
+  constructor(private router: Router, private authService: AuthService) { 
+    if (this.authService.isAuthenticated()) {
+      this.router.navigate(['dashboard', 'home']);
+    }
+  }
 
   form: FormGroup = new FormGroup({
-    username: new FormControl('Admin', Validators.required),
+    username: new FormControl('martin.daguerre@gmail.com', Validators.required),
     password: new FormControl('!Abc123', [Validators.required, Validators.minLength(6)] ),
   });
 
   submit() {
     if (this.form.valid) {
-      const userString = JSON.stringify(this.user); 
-      localStorage.setItem('user', userString); 
-      localStorage.setItem('token', 'Bearer !Abc123789');
-      this.router.navigate(['dashboard', 'home']);
+      this.authService.login(this.form.getRawValue());
     } else {
       this.form.markAllAsTouched();
     }
   }
 
-  constructor(private router: Router) { }
 
 }

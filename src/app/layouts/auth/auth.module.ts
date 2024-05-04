@@ -5,7 +5,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { AuthRoutingModule } from './auth.routing';
 import { RouterModule } from '@angular/router';
 import { LoginModule } from './pages/login/login.module';
-import { UserInfoService } from '../../shared/services/auth/user-info.service';
+import { AuthService } from '../../core/services/auth.service';
 
  @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { UserInfoService } from '../../shared/services/auth/user-info.service';
     AuthRoutingModule,
     LoginModule
   ],
-  providers: [UserInfoService],
+  providers: [AuthService],
   declarations: [AuthComponent]
 })
 export class AuthModule { }
